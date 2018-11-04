@@ -10,12 +10,19 @@ export default [
     alias: 'Batman', // String
     bornIn: 'gotham-city', // Schema.Types.ObjectId
     description: '', // String
-    partnerships: [
+    friends: [
       'superman',
       'wonder-woman',
     ], // [Schema.Types.ObjectId]
-    publisher: 'dc-comics', // Schema.Types.ObjectId
-    realName: 'Bruce Wayne', // String
+    foes: [
+      'joker',
+    ], // [Schema.Types.ObjectId]
+    publishers: [
+      'dc-comics'
+    ], // [Schema.Types.ObjectId]
+    realName: [
+      'Bruce Wayne'
+    ], // String
     residesIn: 'gotham-city', // Schema.Types.ObjectId
     species: [
       'human'
@@ -24,6 +31,30 @@ export default [
       'batmobile',
       'batplane',
     ], // [Schema.Types.ObjectId]
+  },
+  // The Joker
+  {
+    _id: 'joker', // String
+    abilities: [
+      'criminal-mastermind',
+      'expert-chemist'
+    ], // [Schema.Types.ObjectId]
+    alias: 'Joker', // String
+    bornIn: 'gotham-city', // Schema.Types.ObjectId
+    description: '', // String
+    friends: [], // [Schema.Types.ObjectId]
+    foes: [
+      'batman',
+    ], // [Schema.Types.ObjectId]
+    publishers: [
+      'dc-comics'
+    ], // [Schema.Types.ObjectId]
+    realName: [], // String
+    residesIn: 'gotham-city', // Schema.Types.ObjectId
+    species: [
+      'human'
+    ], // [Schema.Types.ObjectId]
+    transport: [], // [Schema.Types.ObjectId]
   },
   // Superman
   {
@@ -36,11 +67,13 @@ export default [
     alias: 'Superman', // String
     bornIn: 'kryptonopolis', // Schema.Types.ObjectId
     description: '', // String
-    partnerships: [
+    friends: [
       'batman',
       'wonder-woman',
     ], // [Schema.Types.ObjectId]
-    publisher: 'dc-comics', // Schema.Types.ObjectId
+    publishers: [
+      'dc-comics'
+    ], // [Schema.Types.ObjectId]
     realName: 'Clark Kent', // String
     residesIn: 'metropolis', // Schema.Types.ObjectId
     species: [
@@ -58,11 +91,13 @@ export default [
     alias: 'Wonder Woman', // String
     bornIn: 'themyscira', // Schema.Types.ObjectId
     description: '', // String
-    partnerships: [
+    friends: [
       'superman',
       'batman',
     ], // [Schema.Types.ObjectId]
-    publisher: 'dc-comics', // Schema.Types.ObjectId
+    publishers: [
+      'dc-comics'
+    ], // [Schema.Types.ObjectId]
     realName: 'Diana Prince', // String
     residesIn: 'paris', // Schema.Types.ObjectId
     species: [

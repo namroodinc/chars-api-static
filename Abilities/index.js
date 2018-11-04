@@ -17,6 +17,18 @@ export default [
     name: 'Peak human physical condition', // String
     description: '', // String
   },
+  // Criminal mastermind
+  {
+    _id: 'criminal-mastermind', // String
+    name: 'Criminal mastermind', // String
+    description: '', // String
+  },
+  // Expert chemist
+  {
+    _id: 'expert-chemist', // String
+    name: 'Expert chemist', // String
+    description: '', // String
+  },
   // Superhuman speed
   {
     _id: 'superhuman-speed', // String

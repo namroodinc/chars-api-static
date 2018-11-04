@@ -5,6 +5,7 @@ export default [
     name: 'Batmobile', // String
     description: '', // String
     publisher: 'dc-comics', // Schema.Types.ObjectId
+    weapons: [], // [Schema.Types.ObjectId]
   },
   // Batplane
   {
@@ -12,6 +13,7 @@ export default [
     name: 'Batplane', // String
     description: '', // String
     publisher: 'dc-comics', // Schema.Types.ObjectId
+    weapons: [], // [Schema.Types.ObjectId]
   },
   // Invisible Plane
   {
@@ -22,5 +24,6 @@ export default [
       now seldom-used, mode of transport.
     `, // String
     publisher: 'dc-comics', // Schema.Types.ObjectId
+    weapons: [], // [Schema.Types.ObjectId]
   }
 ]
