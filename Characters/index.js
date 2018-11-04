@@ -17,6 +17,9 @@ export default [
     foes: [
       'joker',
     ], // [Schema.Types.ObjectId]
+    gadgets: [
+      'grappling-gun',
+    ], // [Schema.Types.ObjectId]
     publishers: [
       'dc-comics'
     ], // [Schema.Types.ObjectId]
@@ -31,6 +34,9 @@ export default [
       'batmobile',
       'batplane',
     ], // [Schema.Types.ObjectId]
+    weaponry: [
+      'batarang'
+    ]
   },
   // The Joker
   {
