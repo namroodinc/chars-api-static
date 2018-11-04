@@ -8,6 +8,12 @@ export default [
       'peak-human-physical-condition',
     ], // [Schema.Types.ObjectId]
     alias: 'Batman', // String
+    alsoKnownAs: [
+      'Bat of Gotham',
+      'Bat Vigilante',
+      'Guardian of Gotham',
+      'Demon of Gotham'
+    ],
     bornIn: 'gotham-city', // Schema.Types.ObjectId
     description: '', // String
     friends: [
@@ -36,7 +42,7 @@ export default [
     ], // [Schema.Types.ObjectId]
     weaponry: [
       'batarang'
-    ]
+    ], // [Schema.Types.ObjectId]
   },
   // The Joker
   {
@@ -46,6 +52,9 @@ export default [
       'expert-chemist'
     ], // [Schema.Types.ObjectId]
     alias: 'Joker', // String
+    alsoKnownAs: [
+      'Clown Prince of Crime'
+    ],
     bornIn: 'gotham-city', // Schema.Types.ObjectId
     description: '', // String
     friends: [], // [Schema.Types.ObjectId]
@@ -61,6 +70,13 @@ export default [
       'human'
     ], // [Schema.Types.ObjectId]
     transport: [], // [Schema.Types.ObjectId]
+    weaponry: [
+      'joker-venom',
+      'electric-joy-buzzer',
+      'razor-sharp-playing-cards',
+      'acid-flower',
+      'boxing-glove-arm',
+    ], // [Schema.Types.ObjectId]
   },
   // Superman
   {
@@ -71,12 +87,19 @@ export default [
       'flight',
     ], // [Schema.Types.ObjectId]
     alias: 'Superman', // String
+    alsoKnownAs: [
+      'Man of Steel',
+      'Son of Krypton',
+    ],
     bornIn: 'kryptonopolis', // Schema.Types.ObjectId
     description: '', // String
     friends: [
       'batman',
       'wonder-woman',
     ], // [Schema.Types.ObjectId]
+    foes: [
+      'lex-luthor'
+    ],
     publishers: [
       'dc-comics'
     ], // [Schema.Types.ObjectId]
@@ -86,6 +109,7 @@ export default [
       'kryptonian'
     ], // [Schema.Types.ObjectId]
     transport: [], // [Schema.Types.ObjectId]
+    weaponry: [], // [Schema.Types.ObjectId]
   },
   // Wonder Woman
   {
@@ -95,12 +119,18 @@ export default [
       'flight',
     ], // [Schema.Types.ObjectId]
     alias: 'Wonder Woman', // String
+    alsoKnownAs: [
+      'Diana of Themyscira',
+      'Goddess',
+      'Princess Diana',
+    ],
     bornIn: 'themyscira', // Schema.Types.ObjectId
     description: '', // String
     friends: [
       'superman',
       'batman',
     ], // [Schema.Types.ObjectId]
+    foes: [], // [Schema.Types.ObjectId]
     publishers: [
       'dc-comics'
     ], // [Schema.Types.ObjectId]
@@ -112,6 +142,9 @@ export default [
     ], // [Schema.Types.ObjectId]
     transport: [
       'invisible-plane'
+    ], // [Schema.Types.ObjectId]
+    weaponry: [
+      'lasso-of-truth',
     ], // [Schema.Types.ObjectId]
   }
 ]
